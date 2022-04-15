@@ -8,21 +8,21 @@ const Footer = () => {
 
     return (
        
-        <footer>
-            <p>Copyright &copy; {today.getFullYear()}</p>
-            <p>Built with Gatsby</p>
-        </footer>
+        <FooterContainer>
+            <h2>This website is Copyright &copy; {today.getFullYear()}</h2>
+        </FooterContainer>
     )
 }
 
 export default Footer
 
-const footer = styled.footer`
+const FooterContainer = styled.div`
   background: transparent;
+  color: #077bf1;
   height: 80px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: 0;
   position: relative;
 
   @media screen and (max-width: 768px) {
