@@ -9,11 +9,13 @@ const Header = () => {
   return (
     <Nav>
       <NavLink to="/"> EXPLORIZ </NavLink>
+      
       <Bars />
       <NavMenu>
         {menuData.map((item, index) => (
          <NavLink to={item.link} key={index}>
            {item.title}
+           
          </NavLink>
         ))}
       </NavMenu>
@@ -38,11 +40,11 @@ const Nav = styled.nav`
   position: relative;
   `
   const NavLink = styled(Link)`
-    color: #fff;
+    color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0.1rem;
+    padding: 0 1rem;
     height: 100%;
     cursor: pointer;
 `

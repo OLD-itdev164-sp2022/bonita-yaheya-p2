@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Travel Website`,
+    title: `Travel Website`,
     description: `A travel website that provides the best destinations for your travel plans!`,
     author: `@Bonita Y`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -9,6 +9,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-remark`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,20 +21,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown`,
-        path: `${__dirname}/content/`,
-      },
-      
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `video`,
         path: `${__dirname}/src/components/assets/videos`,
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -45,7 +38,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -54,5 +47,14 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    {
+      resolve: `@chakra-ui/gatsby-plugin`,
+      options: {
+        resetCSS: true,
+        ColorModeProvider: true,
+
+      },
+    },
   ],
+
 }

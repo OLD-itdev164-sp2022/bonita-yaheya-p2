@@ -1,9 +1,10 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 import Trips from "../components/Trips"
 import Info from "../components/Info"
+import Contact from "../components/Contact"
 
 
 const IndexPage = () => (
@@ -12,10 +13,9 @@ const IndexPage = () => (
     <Hero />
     <Trips />
     <Info />
-    
-    </Layout>
+    <Contact /> 
+  </Layout>
 )
-
 
   export default IndexPage
 
