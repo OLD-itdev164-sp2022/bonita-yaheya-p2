@@ -17,7 +17,7 @@ const Contact = () => {
         <p>Sign up for our newsletter!</p>
         <form
           name="contact" method="POST" data-netlify="true" onSubmit="submit"
-          action="/success-thank-you/" data-netlify-honepot="bot-field">
+          action="/success-thank-you/" data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
               <label>Don't fill this out: <input name="bot-field" />
@@ -26,7 +26,7 @@ const Contact = () => {
          
           <FormWrap>
           <label htmlFor="name">
-            <input type="text" placeholder="Enter your full name" id="name"
+            <input type="text" placeholder="Enter your name" id="name"
             name = "name"/>
             </label>
 
@@ -110,13 +110,16 @@ input {
   border-radius: 50px;
   border: none;
   margin-right: 1rem;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   background: bisque;
 }
 @media screen and (max-width: 768px) {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
+  .img {
+    display: none;
+  }
 
  input {
    margin-bottom: 1rem;

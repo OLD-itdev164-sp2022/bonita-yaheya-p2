@@ -2,20 +2,21 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Info = () => {
+    
   return (
    
     <InformationContainer>
          <ContentWrapper>
             
             <Description>
-            <h3>The possibilities are endless ..</h3>
+            <h6>The possibilities are endless ..</h6>
             <p>Plan your next trip to one of these beautiful destinations.  
                There are many breathtaking places to explore, so get ready and start planning your trip now ....
                 </p> 
            
-            <h3> Review of a visitor ..</h3>
+            <h6> Review from a visitor ..</h6>
             <p>I am happy that I visited the Dunhinda Waterfall while vacationing in Sri Lanka.  It was the
-                best and most unforgettable experience!
+                most unforgettable experience!
                 I have told my friends that they should visit this resplendent island.
                 </p>
             </Description>
@@ -42,6 +43,21 @@ const Description = styled.p`
     color: crimson;
     font-style: italic;
     font-weight: normal;
+
+    h6 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 4vw, 2rem);
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
 `
 const ContentWrapper = styled.div`
     display: grid;

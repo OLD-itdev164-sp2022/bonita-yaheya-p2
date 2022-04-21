@@ -47,14 +47,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    {
-      resolve: `@chakra-ui/gatsby-plugin`,
-      options: {
-        resetCSS: true,
-        ColorModeProvider: true,
-
-      },
-    },
+    
   ],
 
 }

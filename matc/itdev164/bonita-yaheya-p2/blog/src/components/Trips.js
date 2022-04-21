@@ -25,7 +25,7 @@ const Trips = () => {
            
             <article>
             <figure className="position-relative"></figure>
-            <figcaption>Tree</figcaption>
+            <figcaption>Horton Plains</figcaption>
             <StaticImage src='../images/nature.jpg' alt="a tree"
 
                placeholder="tracedSVG"
@@ -42,7 +42,7 @@ const Trips = () => {
     
                placeholder="tracedSVG"
                layout="constrained"
-               title="a field with crops"
+               title="a field with rice crop"
                className="example-img"
                as="div"
              />
